@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>G-Shock SHOP Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/material-icons/material-icons.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <a href="#"><img src="./assets/img/Casio-store-logo-3.png" alt="Casio Store"></a>
+            </div>
+            <nav>
+                <a href="index.html">Main</a>
+                <a href="about.html">About</a>
+                <button class="basketBtn"><i class="material-icons">add_shopping_cart</i></button>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>G-SHOCK <b>SERVICE</b> OVERVIEW</h2>
+                <p>If you have questions, would like to subscribe to the newsletter or would like advice, look here for
+                    initial answers and contact details. You can also find information here on our warranty and service
+                    provisions for your G-SHOCK.</p>
+                <img src="./assets/img/service-header.jpg" alt="Disassembled watches">
+            </section>
+            <section>
+                <h2>CONTACT FORM</h2>
+                <form method="POST" action="https://formspree.io/alex_shadow2@mail.ru">
+                    <div class="leftside-form">
+                        <label>
+                            Model: <input type="text" name="model" placeholder="Model" required>
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="special-collection">I have a G-SHOCK from the MT-G or the
+                            MR-G collection.
+                        </label>
+                        <br>
+                        <label>
+                            Country
+                            <select name="country">
+                                <option value="" disabled selected>--no selection--</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="France">France</option>
+                                <option value="USA">USA</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Hungary">Hungary</option>
+                            </select>
+                        </label>
+                        <br>
+                        <label>
+                            Title
+                            <select name="title">
+                                <option value="" disabled selected>Please choose</option>
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                            </select>
+                        </label>
+                        <br>
+                        <label>
+                            First name: <input type="text" name="firstname" placeholder="" required>
+                        </label>
+                        <br>
+                        <label>
+                            Surname: <input type="text" name="surname" placeholder="" required>
+                        </label>
+                    </div>
+                    <div class=rightside-form>
+                        <label>
+                            Email: <input type="email" name="email" required>
+                        </label>
+                        <br>
+                        <label>
+                            Confirm email address: <input type="email-confirm" name="email-confirm" required>
+                        </label>
+                        <br>
+                        <label>
+                            Your question(s):
+                            <textarea rows="10" cols="45" name="question"></textarea>
+                        </label>
+                        <p><b>CASIO treats your personal data as confidential.</b></p>
+                        <button name="submit">SEND QUERY</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+                <div class="Copyright">
+                  <p>Copyright 2019</p>
+                </div>
+                <div class="Author">
+                  <p>Design and coding <br> by Oleksii Domianich</p>
+                </div>
+            </footer>
+    </div>
+</body>
+
+</html>
