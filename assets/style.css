@@ -96,6 +96,12 @@ body {
     background-color: black;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .wrapper {
     color: white;
     width: 90%;
@@ -105,6 +111,12 @@ body {
 nav a {
     text-decoration: none;
     color: #fff;
+}
+
+nav ul li {
+    display: inline;
+    text-align: right;
+    padding: 30px 20px;
 }
 
 .logo img {
