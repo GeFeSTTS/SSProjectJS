@@ -29,7 +29,7 @@
         </header>
         <main>
             <section>
-                <h2>G-SHOCK <b>SERVICE</b> OVERVIEW</h2>
+                <h1>G-SHOCK <b>SERVICE</b> OVERVIEW</h1>
                 <p>If you have questions, would like to subscribe to the newsletter or would like advice, look here for
                     initial answers and contact details. You can also find information here on our warranty and service
                     provisions for your G-SHOCK.</p>
@@ -40,16 +40,16 @@
                 <form method="POST" action="https://formspree.io/alex_shadow2@mail.ru">
                     <div class="leftside-form">
                         <label>
-                            Model: <input type="text" name="model" placeholder="Model" required>
+                            <p>Model:</p> <input type="text" name="model" placeholder="Model" required>
                         </label>
-                        <br>
+                        <div class="special-collection">
+                            <label>
+                                <input type="checkbox" name="special-collection"> <span>I have a G-SHOCK from the MT-G or the
+                                MR-G collection.</span>
+                            </label>
+                        </div>
                         <label>
-                            <input type="checkbox" name="special-collection">I have a G-SHOCK from the MT-G or the
-                            MR-G collection.
-                        </label>
-                        <br>
-                        <label>
-                            Country
+                            <p>Country:</p>
                             <select name="country">
                                 <option value="" disabled selected>--no selection--</option>
                                 <option value="Ukraine">Ukraine</option>
@@ -63,7 +63,7 @@
                         </label>
                         <br>
                         <label>
-                            Title
+                            <p>Title:</p>
                             <select name="title">
                                 <option value="" disabled selected>Please choose</option>
                                 <option value="Mr">Mr</option>
@@ -72,25 +72,25 @@
                         </label>
                         <br>
                         <label>
-                            First name: <input type="text" name="firstname" placeholder="" required>
+                            <p>First name:</p> <input type="text" name="firstname" placeholder="" required>
                         </label>
                         <br>
                         <label>
-                            Surname: <input type="text" name="surname" placeholder="" required>
+                            <p>Surname:</p> <input type="text" name="surname" placeholder="" required>
                         </label>
                     </div>
-                    <div class=rightside-form>
+                    <div class="rightside-form">
                         <label>
-                            Email: <input type="email" name="email" required>
+                            <p>Email:</p> <input type="email" name="email" required>
                         </label>
                         <br>
                         <label>
-                            Confirm email address: <input type="email" name="email" required>
+                            <p>Confirm email address:</p> <input type="email" name="email" required>
                         </label>
                         <br>
                         <label>
-                            Your question(s):
-                            <textarea rows="10" cols="45" name="question"></textarea>
+                            <p>Your question(s):</p>
+                            <textarea rows="7" name="question"></textarea>
                         </label>
                         <p><b>CASIO treats your personal data as confidential.</b></p>
                         <button name="submit">SEND QUERY</button>

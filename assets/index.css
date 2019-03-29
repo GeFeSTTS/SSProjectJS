@@ -19,18 +19,69 @@
 }
 
 .img-wrap img {
-    width: 100%;
+    width: 50%;
+}
+
+.img-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.img-wrap .watch-title {
+    padding: 10px 0 10px 25px;
+}
+
+.watch-title h2{
+    font-size: 1.2rem;
+}
+
+.post-wrap .info {
+    padding: 30px;
+    line-height: 130%;
 }
 
 .sidebar {
     width: 100%;
 }
 
+.sidebar img {
+    width: 100%;
+}
+
+.sidebar .news-text {
+    background-color: white;
+    color: #000;
+    padding: 3%; 
+}
+
+.sidebar .news-text h3 {
+    margin-top: 3%;
+    line-height: 150%;
+}
+
+.sidebar .second-news {
+    margin-top: 5%;
+}
+
+.sidebar .third-news {
+    margin-top: 5%;
+}
+
+.sidebar article .news-text h3 {
+    font-weight: bold;
+    font-size: 120%;
+}
+
 .price {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 5px;
+    padding: 0 5px 10px 5px;
+}
+
+.content article:nth-child(even) .price {
+    flex-direction: row-reverse;
 }
 
 .price p {
@@ -40,7 +91,7 @@
 
 .content article:nth-child(odd) .price button {
     font-size: 1.2rem;
-    color: black;
+    color: rgba(132, 7, 5, 1);;
     background-color: rgba(68, 68, 68, 0.8);
     padding: 10px 50px;
     border: 2px solid black;
@@ -67,12 +118,9 @@
 }
 
 @media (min-width: 480px) {
-    .content img {
-        width: 100%;
-    }
 
     .content {
-        width: 65%;
+        width: 70%;
       }
     
     .sidebar {
@@ -84,6 +132,15 @@
     .content article {
     display: flex;
     }
+
+    .content article {
+        align-items: center;
+    }
+
+    .sidebar article .news-text h3 {
+        font-size: 100%;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -96,14 +153,28 @@
         width: 70%;
     }
 
-    .img-wrap,
+    .img-wrap{
+        width: 45%;
+        margin: 10px 0 0 10px;
+    }
+
     .post-wrap {
-        width: 50%;
+        width: 55%;
+        margin-right: 5%;
     }
 
     .img-wrap img {
-        width: 100%;
-      }
+        width: 70%;
+    }
+
+    .img-wrap {
+        flex-direction: column;
+    }
+
+    .info p {
+        font-size: 110%;
+        line-height: 150%;
+    }
 
     .content article:nth-child(even) {
         flex-direction: row-reverse;
@@ -113,6 +184,28 @@
     .content article:nth-child(odd) {
         flex-direction: row;
         text-align: left;
+    }
+
+    .sidebar article .news-text h3 {
+        font-size: 130%;
+        padding: 5px;
+    }
+
+    .price {
+        justify-content: space-between;
+        margin-left: 30px;
+        align-items: center;
+        padding: 0 5px 10px 5px;
+    }
+
+    .content article:nth-child(odd) .price button {
+        font-size: 1.5rem;
+        padding: 10px 55px;
+    }
+
+    .content article:nth-child(even) .price button {
+        font-size: 1.5rem;
+        padding: 10px 55px;
     }
 
 }
