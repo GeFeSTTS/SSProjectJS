@@ -91,7 +91,7 @@
 
 .content article:nth-child(odd) .price button {
     font-size: 1.2rem;
-    color: rgba(132, 7, 5, 1);;
+    color: black;
     background-color: rgba(68, 68, 68, 0.8);
     padding: 10px 50px;
     border: 2px solid black;
