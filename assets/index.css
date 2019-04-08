@@ -45,6 +45,50 @@
     width: 100%;
 }
 
+.sidebar .currency .converter button {
+    padding: 15px 40px;
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+    width: 100%;
+    border: solid white 1px;
+    border-radius: 5px;
+    transition-duration: 0.5s
+}
+
+.sidebar .currency .converter .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .currency button:hover {
+    background-color: rgba(132, 7, 5, 0.5);
+}
+
+.sidebar .currency form  .input,
+.sidebar .currency form  .output
+ {
+    display:inline-block;
+    width: 45%;
+}
+
+.sidebar .currency form label {
+    margin: 2%;
+    display:inline-block;
+}
+
+.sidebar .currency form label select {
+    background-color: black;
+    color: white;
+}
+
+.sidebar .currency form label input[name="curr-amount"] {
+    background-color: black;
+    width: 100%;
+    color: white;
+    border: solid 1px;
+}
+
 .sidebar img {
     width: 100%;
 }
@@ -189,6 +233,10 @@
     .sidebar article .news-text h3 {
         font-size: 130%;
         padding: 5px;
+    }
+
+    .sidebar .currency .converter .data {
+        flex-direction: row;
     }
 
     .price {

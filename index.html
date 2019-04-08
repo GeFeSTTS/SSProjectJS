@@ -115,6 +115,38 @@
                 </article>
             </div>
             <aside class="sidebar">
+                <div class="currency">
+                    <form class="converter">
+                        <div class="data">
+                        <label class="input">
+                            <span>From:</span>
+                            <select id="from" name="from">
+                                <option value="" disabled selected>Please choose</option>
+                                <option value="USD">USD</option>
+                            </select>
+                        </label>
+                        <label class="output">
+                            <span>To:</span>
+                            <select id="to" name="to">
+                                <option value="" disabled selected>Please choose</option>
+                                <option value="UAH">UAH</option>
+                                <option value="EUR">EUR</option>
+                                <option value="RUB">RUB</option>
+                                <option value="PLN">PLN</option>
+                            </select>
+                        </label>
+                        </div>
+                        <label>
+                            Amount: <input type="number" name="curr-amount">
+                        </label>
+                        <br>
+                        <label>
+                            Converted: <output type="text" name="curr-converted"></output>
+                        </label>
+                        <br>
+                        <button class="curr-convert">Convert</button>
+                    </form>
+                </div>
                 <article class="first-news">
                     <img src="./assets/img/PRW-7000X-1JR-case.jpg" alt="G-Shock PRW-7000X-1JR">
                     <div class="news-text">
@@ -144,6 +176,8 @@
             </div>
         </footer>
     </div>
+
+    <script src='scripts/index.js'></script>
 </body>
 
 </html>
