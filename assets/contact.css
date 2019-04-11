@@ -16,6 +16,24 @@ section p {
     line-height: 150%;
 }
 
+.topnav.responsive a.icon{
+    position: absolute;
+    top: -35px; 
+    left: 14px;
+}
+
+header .topnav.responsive {
+    height: 100px;
+}
+
+.topnav.responsive {
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 section h2 {
     font-size: 1.7rem;
     margin-top: 2%;
@@ -41,7 +59,6 @@ form button {
     font-weight: bold;
     color: black;
     padding: 5px 35px 5px 35px;
-    margin-top: 10px;
 }
 
 form button:hover {
@@ -53,9 +70,14 @@ section form textarea {
     width: 90%;
 }
 
-form p {
-    margin-bottom: 0;
-    margin-top: 2%;
+form input,
+form select {
+    margin-bottom: 2%;
+    margin-top: 0;
+}
+
+section h2 {
+    margin-bottom: 5px;
 }
 
 .special-collection {
@@ -86,6 +108,10 @@ section form textarea {
         width: 93%;
     }
 
+    .topnav a {
+        text-decoration: none;
+    }
+
     input:not([type="checkbox"]) {
         width: 90%;
     }
@@ -97,6 +123,4 @@ section form textarea {
     .special-collection {
         width: 90%;
     }
-
-
 }

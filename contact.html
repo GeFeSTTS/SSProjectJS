@@ -18,13 +18,11 @@
             <div class="logo">
                 <a href="index.html"><img src="./assets/img/Casio-store-logo-3.png" alt="Casio Store"></a>
             </div>
-            <nav>
-                <div class="smallscr" tabindex="1">&#9776;</div>
-                <ul>
-                    <li><a href="index.html">Main</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><button class = "basketBtn"><i class="material-icons">add_shopping_cart</i></button></li>
-                </ul>
+            <nav class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <button class="basketBtn"><i class="material-icons">add_shopping_cart</i></button>
+                <a href="" id="menu" class="icon">&#9776;</a>
             </nav>
         </header>
         <main>
@@ -40,16 +38,17 @@
                 <form method="POST" action="https://formspree.io/alex_shadow2@mail.ru">
                     <div class="leftside-form">
                         <label>
-                            <p>Model:</p> <input type="text" name="model" placeholder="Model" required>
+                            Model: <br> <input type="text" name="model" placeholder="Model" required>
                         </label>
                         <div class="special-collection">
                             <label>
-                                <input type="checkbox" name="special-collection"> <span>I have a G-SHOCK from the MT-G or the
-                                MR-G collection.</span>
+                                <input type="checkbox" name="special-collection"> <span>I have a G-SHOCK from the MT-G
+                                    or the
+                                    MR-G collection.</span>
                             </label>
                         </div>
                         <label>
-                            <p>Country:</p>
+                            Country: <br>
                             <select name="country">
                                 <option value="" disabled selected>--no selection--</option>
                                 <option value="Ukraine">Ukraine</option>
@@ -63,7 +62,7 @@
                         </label>
                         <br>
                         <label>
-                            <p>Title:</p>
+                            Title: <br>
                             <select name="title">
                                 <option value="" disabled selected>Please choose</option>
                                 <option value="Mr">Mr</option>
@@ -72,24 +71,24 @@
                         </label>
                         <br>
                         <label>
-                            <p>First name:</p> <input type="text" name="firstname" placeholder="" required>
+                            First name: <br> <input type="text" name="firstname" placeholder="" required>
                         </label>
                         <br>
                         <label>
-                            <p>Surname:</p> <input type="text" name="surname" placeholder="" required>
+                            Surname: <br> <input type="text" name="surname" placeholder="" required>
                         </label>
                     </div>
                     <div class="rightside-form">
                         <label>
-                            <p>Email:</p> <input type="email" name="email" required>
+                            Email: <br> <input type="email" name="email" required>
                         </label>
                         <br>
                         <label>
-                            <p>Confirm email address:</p> <input type="email" name="email" required>
+                            Confirm email address: <br> <input type="email" name="email" required>
                         </label>
                         <br>
                         <label>
-                            <p>Your question(s):</p>
+                            Your question(s): <br>
                             <textarea rows="7" name="question"></textarea>
                         </label>
                         <p><b>CASIO treats your personal data as confidential.</b></p>
@@ -99,14 +98,15 @@
             </section>
         </main>
         <footer>
-                <div class="Copyright">
-                  <p>Copyright 2019</p>
-                </div>
-                <div class="Author">
-                  <p>Design and coding <br> by Oleksii Domianich</p>
-                </div>
-            </footer>
+            <div class="Copyright">
+                <p>Copyright 2019</p>
+            </div>
+            <div class="Author">
+                <p>Design and coding <br> by Oleksii Domianich</p>
+            </div>
+        </footer>
     </div>
+    <script src='scripts/index.js'></script>
 </body>
 
 </html>
