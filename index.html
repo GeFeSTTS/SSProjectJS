@@ -34,8 +34,8 @@
                 </form>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-                <button class="basketBtn" data-toggle="modal" data-target="#productInfo"><i
-                        class="material-icons">add_shopping_cart</i></button>
+                <button class="basketBtn" data-toggle="modal" href="#cartModal"><i
+                        class="material-icons">add_shopping_cart</i> <span id="cart-badge" class="badge badge-light"></span></button>
                 <a href="" id="menu" class="icon">&#9776;</a>
             </nav>
         </header>
@@ -137,30 +137,40 @@
         </footer>
     </div>
 
-    <div class="modal fade" id="productInfo" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="productInfoTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    <!-- Cart -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartLabel">Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="cart-product-list-container"></div>
+            <hr>
+            <div class="container">
+              <form>
+                <div class="form-group row">
+                  <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                  <input class="form-control col-8" type="text" id="client-name" required>
                 </div>
-                <div class="modal-body">
-                    <div>
-                        <h5 class="card-title">Your purchases</h5>
-                        <p class="card-text">G-Shock</p>
-                    </div>
+                <div class="form-group row">
+                  <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                  <input class="form-control col-8" type="email" id="client-email" required>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Buy</button>
-                </div>
+              </form>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary order">Order</button>
+          </div>
         </div>
+      </div>
     </div>
-
+    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>

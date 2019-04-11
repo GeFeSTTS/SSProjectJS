@@ -19,6 +19,10 @@ nav ul li a {
     color: #fff;
 }
 
+.topnav.responsive button {
+    padding-left: 20%;
+}
+
 .content article, .content article:nth-child(even) {
     flex-direction: column;
 }
@@ -79,7 +83,6 @@ nav ul li a {
 .sidebar .third-news {
     margin-top: 5%;
 }
-
 
 .price {
     display: flex;
