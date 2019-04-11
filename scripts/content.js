@@ -15,7 +15,7 @@ class ProductList {
         products
         .forEach(product => {
             productListDomString += 
-                `<article class="post-${product.id}">
+                `<article class="post-${product.id} product">
                   <div class="img-wrap">
                     <img src="./assets/img/${product.image}" 
                         alt="${product.title}">
@@ -32,7 +32,7 @@ class ProductList {
                         <div class="price">
                             <p>${product.price} ${product.currency}</p>
                             <form>
-                                <button>Buy</button>
+                                <button class="buy" data-id="${product.id}">Buy</button>
                             </form>
                         </div>
                   </div>
@@ -40,4 +40,5 @@ class ProductList {
         });
         container.html(productListDomString);
     }
+
 }
