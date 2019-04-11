@@ -40,5 +40,4 @@ class ProductList {
         });
         container.html(productListDomString);
     }
-
 }
