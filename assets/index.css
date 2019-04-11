@@ -33,6 +33,11 @@ nav ul li a {
     align-items: center;
 }
 
+.post-wrap .info p {
+    font-size: 110%;
+    line-height: 130%;
+}
+
 .img-wrap .watch-title {
     padding: 10px 0 10px 25px;
 }
@@ -43,7 +48,6 @@ nav ul li a {
 
 .post-wrap .info {
     padding: 30px;
-    line-height: 130%;
 }
 
 .sidebar {
@@ -90,7 +94,7 @@ nav ul li a {
 }
 
 .price p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: rgba(211, 156, 47, 0.5);
 }
 
@@ -153,6 +157,7 @@ nav ul li a {
 
 }
 
+
 @media (min-width: 768px) {
     nav ul li:hover {
         background: rgba(82, 73, 73, 0.5);
@@ -186,6 +191,11 @@ nav ul li a {
         width: 55%;
         margin-right: 5%;
     }
+    
+    .post-wrap .info p {
+        font-size: 90%;
+        line-height: 130%;
+    }
 
     .img-wrap img {
         width: 70%;
@@ -194,11 +204,7 @@ nav ul li a {
     .img-wrap {
         flex-direction: column;
     }
-
-    .info p {
-        font-size: 110%;
-        line-height: 150%;
-    }
+    
 
     .content article:nth-child(even) {
         flex-direction: row-reverse;
@@ -238,5 +244,12 @@ nav ul li a {
 
 }
 
+@media (min-width: 830px) {
+    .post-wrap .info p {
+        font-size: 125%;
+        line-height: 130%;
+    }
+    
+}
 
 

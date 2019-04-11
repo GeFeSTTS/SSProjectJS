@@ -4,27 +4,31 @@
         "title": "GA700MMC-1A",
         "image": "GA700MMC-1A_large.png",
         "description": "This model is based on street fashion motifs, decorated with distinctive black and rose gold coloring. The black coloring of this model is a glossy black finish, while the face is accented with rose gold coloring.",
-        "price": 130
+        "price": 130,
+        "currency": "USD"
     },
     {
         "id": "2",
         "title": "GWM5610-1GD",
         "image": "GWM5610-1GD_large.png",
         "description": "G-SHOCK x Gorillaz Collaboration model. Classic GWM5610 case silhouette with a black color tone. GWM5610 counts with Tough Solar and Multi-band 6 Atomic timekeeping technology housed within a slim but tough case.",
-        "price": 140
+        "price": 140,
+        "currency": "USD"
     },
     {
         "id": "3",
         "title": "GBD800-1",
         "image": "GBD800-1_large.png",
         "description": "GBD800 water resistant digital models features a multi-segment digital display to improve readability and operation while engaged in sports. The LCD is divided into upper, middle, and lower sections.",
-        "price": 99
+        "price": 99,
+        "currency": "USD"
     },
     {
         "id": "4",
         "title": "GG1000-1A8",
         "image": "GG1000-1A8_large.png",
         "description": "This is the latest new addition to the MASTER OF G MUDMASTER Series. Mud Resist construction helps to ensure that nothing gets into the watch when down and dirty work takes you deep into the dirt and sludge.",
-        "price": 320
+        "price": 320,
+        "currency": "USD"
     }
 ]
