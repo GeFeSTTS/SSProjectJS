@@ -149,7 +149,8 @@ header .topnav.responsive {
 }
 
 .topnav.responsive a,
-.topnav.responsive form{
+.topnav.responsive form,
+.topnav.responsive button {
     color: white;
     text-decoration: none;
     margin: 5px;
