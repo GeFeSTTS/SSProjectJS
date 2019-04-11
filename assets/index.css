@@ -67,6 +67,9 @@ nav ul li a {
 .sidebar .news-text h3 {
     margin-top: 3%;
     line-height: 150%;
+    color: black;
+    font-weight: bold;
+    font-size: 120%;
 }
 
 .sidebar .second-news {
@@ -77,10 +80,6 @@ nav ul li a {
     margin-top: 5%;
 }
 
-.sidebar article .news-text h3 {
-    font-weight: bold;
-    font-size: 120%;
-}
 
 .price {
     display: flex;
