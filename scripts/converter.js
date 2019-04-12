@@ -20,11 +20,7 @@ function showConvert() {
                     products.price = convertedAmount.toFixed(2);
                     products.currency = currTo;
             })
-            renderPage()
+            const productList = new ProductList('products.json', $('.content'));
         })
-    }
-    
-    function renderPage() {
-        $(".content").load(index.html + " .content .price p");
     }
 }
