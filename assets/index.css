@@ -236,12 +236,12 @@ nav ul li a {
 
     .content article:nth-child(odd) .price button {
         font-size: 1.5rem;
-        padding: 10px 55px;
+        padding: 5px 40px;
     }
 
     .content article:nth-child(even) .price button {
         font-size: 1.5rem;
-        padding: 10px 55px;
+        padding: 5px 40px;
     }
 
 }
@@ -250,6 +250,16 @@ nav ul li a {
     .post-wrap .info p {
         font-size: 125%;
         line-height: 130%;
+    }
+    
+    .content article:nth-child(odd) .price button {
+        font-size: 1.5rem;
+        padding: 10px 55px;
+    }
+
+    .content article:nth-child(even) .price button {
+        font-size: 1.5rem;
+        padding: 10px 55px;
     }
     
 }
