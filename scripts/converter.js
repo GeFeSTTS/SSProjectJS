@@ -11,7 +11,7 @@ function showConvert() {
         const currFrom = products[0].currency;
         const currKey = currFrom + '_' + currTo;
         products.forEach(function(products){
-            fetch(`https://free.currencyconverterapi.com/api/v6/convert?q=${currKey}&compact=ultra&apiKey=6f0e3f1d07f5b51eb161`)
+            fetch(`https://free.currencyconverterapi.com/api/v6/convert?q=${currKey}&compact=ultra&apiKey=d1b5218e0be93e157106`)
                 .then( response => response.json() )
                 .then( currency => {
                     const rate = currency[currKey];
@@ -19,6 +19,7 @@ function showConvert() {
                     const convertedAmount = rate * sourceAmount;
                     products.price = convertedAmount.toFixed(2);
                     products.currency = currTo;
+                    console.log(products.price + products.currency);
             })
         })
     }
