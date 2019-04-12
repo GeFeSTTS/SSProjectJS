@@ -20,7 +20,6 @@ function showConvert() {
                     products.price = convertedAmount.toFixed(2);
                     products.currency = currTo;
             })
-            const productList = ProductList('products.json', $('.content'));
         })
     }
 }
